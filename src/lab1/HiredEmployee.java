@@ -10,7 +10,7 @@ package lab1;
  *
  * @author mgreen12
  */
-public class HireEmployee extends Employee{
+public class HiredEmployee extends Employee{
     
     private boolean metWithHr;
     private boolean metDeptStaff;
@@ -18,7 +18,7 @@ public class HireEmployee extends Employee{
     private boolean movedIn;
     private String cubeId;
     
-    public HireEmployee() {
+    public HiredEmployee() {
         
     }
     
@@ -69,6 +69,10 @@ public class HireEmployee extends Employee{
         } else {
             return "Orientation in progress...";
         }
+    }
+    
+    public void isHired() {
+        System.out.println("The employee's status is: " + getStatus());
     }
     
 }
